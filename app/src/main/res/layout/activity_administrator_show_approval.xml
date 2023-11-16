@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/approvalTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="申请列表"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp" />
+
+    <ListView
+        android:id="@+id/approvalListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/approveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始审批"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity.StudentChooseApprovalActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择课程"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="如果课程未申请，那么请输入申请原因以及申请id；如果课程已申请，则输入申请id会撤销申请；如果课程已结束，输入申请id会视为你已确定申请无误了"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextApprovalId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="申请ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextApprovalReason"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:hint="申请原因" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

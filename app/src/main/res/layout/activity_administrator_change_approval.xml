@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity.AdministratorChangeApprovalActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择审批操作"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本次审批为二次审批，如果不审批则默认通过，如果进行审批则具有一票否决权,如果输入已审批的id，则撤销该次审批"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextApprovalId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="申请ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextApprovalReason"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:hint="审批原因" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@+id/radioButtonPass">
+
+        <RadioButton
+            android:id="@+id/radioButtonPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过" />
+
+        <RadioButton
+            android:id="@+id/radioButtonReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不通过" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="撤销" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
